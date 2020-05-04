@@ -1,6 +1,5 @@
 import React ,{Component} from  "react"
-
-//This is Class Component
+import Pt from "prop-types"
 class Student extends Component{
   render(){
     return(
@@ -12,14 +11,7 @@ class Student extends Component{
   }
 }
 
-//This is Functional Component
-/*
-const Student=props=>{
-  return (
-    <div>
-    <h1> Hello ,{props.name}</h1>
-    <h2>Your Roll Number: {props.roll}</h2>
-    </div>
-  )
-} */
+Student.propTypes={
+  name:Pt.string
+}
 export default Student
