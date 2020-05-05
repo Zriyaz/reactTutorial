@@ -1,13 +1,23 @@
 import React,{Component} from "react"
-import Marks from "./Marks"
- export default class Student extends Component{
-   render(){
-     console.log("Student [Child of App]")
-     return(
-       <div>
-       <h1>Hello {this.props.name}</h1>
-       <Marks/>
-       </div>
-     )
-   }
- } 
+import Student from "./Student"
+
+export default class App extends Component{
+  constructor(props){
+    super(props)
+    this.state={
+      roll:"14"
+    }
+  }
+  clickhandle=()=>{
+    console.log("Button Clicked")
+    this.setState({roll:200})
+  }
+  render(){
+    return(
+      <div>
+      <Marks roll={this.state.roll}/>
+      <button onClick={this.clickHandle}>change</button>
+      </div>
+    )
+  }
+}
