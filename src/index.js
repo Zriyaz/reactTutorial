@@ -1,5 +1,5 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Student from "./Student"
+import App from "./App"
 
-ReactDOM.render(<Student roll="14"/>,document.getElementById("root"))  
+ReactDOM.render(<App name="Riyaz"/>,document.getElementById("root"))  
