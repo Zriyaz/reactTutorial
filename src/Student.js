@@ -1,31 +1,17 @@
-import React,{Component} from "react"
+import React from "react"
 
-class Student extends Component{
- 
 
-  //binding this keyword with handleClick function 
-  constructor(props){
-    super(props)
-    this.state={
-      name:"Riyaz",
-      roll:this.props.roll
-    }
-    //this.handleClick=this.handleClick.bind(this);
-  }
-  /*this gives undefined this tos solve this problem use Arrow Function
-  handleClick(){
-    console.log("Button Clicked",this)
-  }*/ 
-  handleClick=()=>{
-    console.log("Button Clicked",this)
-  }
-  render(){
-    return(
-      <div>
-      <h1>Event Handling Example Name:{this.state.name} Roll:{this.state.roll}</h1>
-      <button onClick={this.handleClick}>Click Me </button>
-      </div>
-    )
-  }
-} 
+function Student(props){
+function handleClick(e){
+  e.preventDefault()
+  console.log("Button Clicked")
+}
+return (
+  <div>
+  <h1>Hello {props.name} </h1>
+  <button onClick={handleClick} >Click Me</button>
+  <a href="http://www.geekyshows.com" onClick={handleClick}>Click Me</a>
+  </div>
+)
+}
 export default Student
