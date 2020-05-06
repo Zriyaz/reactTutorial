@@ -1,16 +1,18 @@
-import React from "react"
-import "./Menustyle.css"
+  import React from "react"
+  import "./Menustyle.css"
 
-  const Menu=()=>{
-  return(
-    <div className="Menustyle">
-      <ul>
-        <li>Home </li>
-        <li>About </li>
-        <li>Contact </li>
-      </ul>
-    </div>
-  )
-}
+  import {Link} from "react-router-dom" 
 
-export default Menu
+    const Menu=()=>{
+    return(
+      <div className="Menustyle">
+        <ul>
+          <li> <Link to="/"> Home </Link> </li>
+          <li> <Link to="About">About </Link></li>
+          <li> <Link to="Contact">Contact </Link></li>
+        </ul>
+      </div>
+    )
+  }
+
+  export default Menu
