@@ -1,4 +1,4 @@
-import React,{Component} from "react"
+Cimport React,{Component} from "react"
 import Marks from "./Marks"
 
 export default class App extends Component{

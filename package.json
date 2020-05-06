@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "node": "^14.2.0",
+    "nodejs": "^0.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "^16.9.0",
     "react-scripts": "2.1.5",
     "reactstrap": "^8.4.1"
