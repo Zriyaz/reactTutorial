@@ -1,13 +1,22 @@
 import React from "react"
-import useCustomCounter from "./Custome"
+import Menu from "./Menu"
+import About from "./About"
+import Contact from "./Contact"
+ export default function App(){
+  return(
 
-export default function App(){
-const data=useCustomCounter();
-  
-  return <>
-  <h1>Count up:{data.count}</h1>
-  <button type="button" onClick={data.handleIncrement}>Click</button>
-  </>
+    <div>
+     <Menu/>
+     <Home/>
+     <About/> 
+     <Contact/> 
+    </div> 
+  )
 }
-
- 
+const Home=()=>{
+  return(
+    <div className="Contactstyle">
+     <h1>Welcome to home page </h1>
+    </div>
+  )
+}
